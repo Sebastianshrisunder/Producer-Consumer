@@ -27,13 +27,12 @@ Run the Appapplication.java file for both the user1 and user2
 The Microservices will be started.
 
 For testing the entire process, you can use postman and hit the following endpoints-
-For user1:
+
 _curl_ --location 'http://localhost:8080/user1/send' \
 --data '"I am user 1"'
 
 _curl_ --location --request POST 'http://localhost:8080/user1/read'
 
-For user2:
 _curl_ --location 'http://localhost:8081/user2/send' \
 --header 'Content-Type: application/json' \
 --data '"I am user2 who are you?"'
